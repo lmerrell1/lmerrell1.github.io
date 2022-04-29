@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conscious</title>
+    <link rel="stylesheet" href="https://use.typekit.net/csy8hxn.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/csy8hxn.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/csy8hxn.css" />
+    <link rel="stylesheet" type="text/css" href="conscious.css" />
+  </head>
+  <body>
+    <!-- Entire Page Wrapper -->
+    <div class="wrapper">
+      <!-- Nav Bar -->
+      <header>
+        <div class="store-name">
+          <a href="index.html">CONSCIOUS</a>
+        </div>
+
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="index.html">BEAUTY</a>
+            </li>
+            <li>
+              <a href="index.html">HYGIENE</a>
+            </li>
+            <li>
+              <a href="index.html">HOUSEHOLD</a>
+            </li>
+            <li>
+              <a href="index.html">FASHION</a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="gallery/magnifying-glass.png"
+                  width="15"
+                  height="15"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="gallery/shopping-bag.png"
+                  width="15"
+                  height="15"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- Hero Image / Header -->
+      <section class="hero-image">
+        <div class="content-width"></div>
+      </section>
+
+      <!--Trending Section-->
+      <section class="trending-container">
+        <div class="description">
+          <p>TRENDING</p>
+        </div>
+        <div class="gallery">
+          <div></div>
+          <div class="item">
+            <a href="conscious-item01.html">
+              <img src="gallery/thumbnail-01.jpeg" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="item-02.html"><img src="gallery/thumbnail-02.jpeg" /></a>
+          </div>
+          <div class="item">
+            <a href="item-03.html"><img src="gallery/thumbnail-03.jpeg" /></a>
+          </div>
+          <div class="item">
+            <a href="item-04.html"><img src="gallery/thumbnail-04.jpeg" /></a>
+          </div>
+          <div class="item">
+            <a href="item-05.html"><img src="gallery/thumbnail-05.jpeg" /></a>
+          </div>
+        </div>
+      </section>
+
+      <!--What's New Section-->
+      <section class="whats-new-container">
+        <div class="description">
+          <p>WHAT'S NEW</p>
+        </div>
+        <div class="gallery">
+          <div></div>
+          <div class="item">
+            <a href="item-06.html"> <img src="gallery/thumbnail-06.jpeg" /> </a>
+          </div>
+          <div class="item">
+            <a href="item-07.html"><img src="gallery/thumbnail-07.jpeg" /></a>
+          </div>
+          <div class="item">
+            <a href="item-08.html"><img src="gallery/thumbnail-08.jpeg" /></a>
+          </div>
+          <div class="item">
+            <a href="item-09.html"><img src="gallery/thumbnail-09.jpeg" /></a>
+          </div>
+          <div class="item">
+            <a href="item-10.html"><img src="gallery/thumbnail-10.jpeg" /></a>
+          </div>
+        </div>
+      </section>
+
+      <!--Mission Section-->
+      <div class="section-two-shell">
+        <div class="section-two-img container">
+          <img src="gallery/mission-img.jpeg" />
+        </div>
+        <div class="section-two-info container">
+          <div class="text-container-2">
+            <h3>OUR MISSION</h3>
+            <h4>You can make a difference</h4>
+            <p>
+              From your every day household items to luxury beauty products,
+              we're passionate about providing <strong>sustainable</strong>,
+              <strong>cruely-free</strong>, and <strong>alternatives</strong>!
+              We hope to provide our customers with a more sustainable,
+              eco-friendly shopping experience. Together, we can help save the
+              planet!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sign Up -->
+      <div class="sign-up-container">
+        <div class="sign-up">
+          <h2>WANT TO RECEIVE OFFERS AND NEWS FROM CONSCIOUS?</h2>
+          <button>Sign me up</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer-nav">
+        <ul>
+          <li>
+            <a href="menu.html">CONTACT US</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a href="index.html">HELP CENTER</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a href="index.html">BRAND PARTNERSHIPS</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      function updateHeading(newHeading) {
+        let heading = document.querySelector(".sign-up-container h2");
+        heading.innerHTML = newHeading;
+      }
+
+      function signUp() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        updateHeading(
+          "Thank you for signing up, " +
+            name +
+            "!" +
+            "<br/> We'll email you exclusive offers + news!"
+        );
+      }
+
+      let signUpButton = document.querySelector("button");
+      signUpButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>

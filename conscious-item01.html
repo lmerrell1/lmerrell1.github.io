@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conscious</title>
+    <link rel="stylesheet" href="https://use.typekit.net/csy8hxn.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/csy8hxn.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/csy8hxn.css" />
+    <link rel="stylesheet" type="text/css" href="conscious.css" />
+  </head>
+  <body>
+    <!-- Entire Page Wrapper -->
+    <div class="wrapper">
+      <!-- Nav Bar -->
+       <header>
+        <div class="store-name">
+          <a href="index.html">CONSCIOUS</a>
+        </div>
+
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="index.html">BEAUTY</a>
+            </li>
+            <li>
+              <a href="index.html">HYGIENE</a>
+            </li>
+            <li>
+              <a href="index.html">HOUSEHOLD</a>
+            </li>
+            <li>
+              <a href="index.html">FASHION</a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="gallery/magnifying-glass.png"
+                  width="15"
+                  height="15"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="gallery/shopping-bag.png"
+                  width="15"
+                  height="15"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!--Item Section-->
+      <div class="item-section-shell">
+        <div class="item-section-img item-container">
+          <img src="gallery/thumbnail-01-item.jpeg" />
+        </div>
+        <div class="item-section-info item-container">
+          <div class="item-section-container-2">
+            <p id="itemName"></p>
+            <p id="itemBrandAndRating"></p>
+            <p id="itemPrice"></p>
+
+            <div class="item-desc-container">
+              <h5>DESCRIPTION</h5>
+              <p>Bamboo toothbrush with natural bristles and a natural, mint flavored toothpaste
+              </br>
+              This product is <b>cruelty-free</b> and <b>sustainable</b>! </p>
+              <button class="cart">ADD TO CART</button>
+              <button class="wish">+ WISHLIST</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer-nav">
+        <ul>
+          <li>
+            <a href="menu.html">CONTACT US</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a href="index.html">HELP CENTER</a>
+          </li>
+          <li>|</li>
+          <li>
+            <a href="index.html">BRAND PARTNERSHIPS</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      var item = {
+        name: "Organic Toothbrush + Toothpaste Combo",
+        dollarSign: "$",
+        price: 15,
+        fullItemPrice: function () {
+          return this.dollarSign + this.price;
+        },
+        brand: "EcoLiving",
+        rating: 4.7,
+        ratingSymbol: "Stars",
+        fullItemRating: function () {
+          return this.rating + " " + this.ratingSymbol;
+        },
+      };
+
+      document.getElementById("itemName").innerHTML = item.name;
+
+      document.getElementById("itemBrandAndRating").innerHTML =
+        item.brand + " " + "|" + " " + item.fullItemRating();
+
+      document.getElementById("itemPrice").innerHTML = item.fullItemPrice();
+    </script>
+  </body>
+</html>
